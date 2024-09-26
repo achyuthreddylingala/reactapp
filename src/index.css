@@ -49,3 +49,16 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+/* index.css (add to existing styles) */
+
+h2 {
+  margin-top: 20px;
+}
+
+input {
+  margin: 5px;
+}
+
+button {
+  margin-left: 5px;
+}

@@ -1,14 +1,25 @@
 // components/UserDashboard.js
-import React from "react";
+import React, { useState } from "react";
+import ProductList from "./ProductList";
+import Cart from "./Cart";
 
 function UserDashboard({ isGuest }) {
+  const [cartItems, setCartItems] = useState([]);
+
+  const addToCart = (product) => {
+    setCartItems((prevItems) => [...prevItems, product]);
+  };
+
   return (
     <div>
       <h1>{isGuest ? "Welcome, Guest!" : "Welcome, User!"}</h1>
       {isGuest ? (
         <p>You have limited access. Please sign up or log in for full features.</p>
       ) : (
-        <p>Enjoy all the features of the platform!</p>
+        <>
+          <ProductList addToCart={addToCart} />
+          <Cart cartItems={cartItems} />
+        </>
       )}
     </div>
   );
