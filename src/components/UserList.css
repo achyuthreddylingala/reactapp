@@ -1,0 +1,60 @@
+/* UserList.css */
+
+.user-list-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .user-list-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .user-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .user-list li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .user-list li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .user-info {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .user-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .deactivate-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .deactivate-button:hover {
+    background-color: #c82333;
+  }
+  

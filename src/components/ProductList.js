@@ -1,5 +1,6 @@
 // components/ProductList.js
-import React, { useState } from "react";
+import React from "react";
+import './ProductList.css'; // Import the CSS file for styling
 
 const initialProducts = [
   { id: 1, name: "Product 1", price: 10 },
@@ -9,13 +10,13 @@ const initialProducts = [
 
 function ProductList({ addToCart }) {
   return (
-    <div>
+    <div className="product-list-container">
       <h2>Available Products</h2>
-      <ul>
+      <ul className="product-list">
         {initialProducts.map((product) => (
-          <li key={product.id}>
+          <li key={product.id} className="product-item">
             {product.name} - ${product.price}
-            <button onClick={() => addToCart(product)}>Add to Cart</button>
+            <button className="add-to-cart-button" onClick={() => addToCart(product)}>Add to Cart</button>
           </li>
         ))}
       </ul>

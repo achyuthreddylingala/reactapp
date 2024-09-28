@@ -1,0 +1,68 @@
+/* UserDashboard.css */
+
+.dashboard-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-container h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .guest-warning {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #d9534f;
+    margin-bottom: 20px;
+  }
+  
+  .product-list-container,
+  .cart-container {
+    margin-bottom: 20px;
+  }
+  
+  .checkout-initiate-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .checkout-initiate-button:hover {
+    background-color: #218838;
+  }
+  
+  /* For when the user is checking out */
+  .checkout-initiate-button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  .cart-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add some additional styles for the cart and checkout buttons */
+  .cart-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  

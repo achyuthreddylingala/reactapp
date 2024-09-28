@@ -1,13 +1,14 @@
-// components/AdminDashboard.js
+// AdminDashboard.js
 import React from "react";
 import ManageProducts from "./ManageProducts";
 import UserList from "./UserList";
+import "./AdminDashboard.css"; // Import the CSS file
 
 function AdminDashboard() {
   return (
-    <div>
-      <h1>Admin Dashboard</h1>
-      <p>Manage Products and Users:</p>
+    <div className="dashboard-container">
+      <h1 className="dashboard-header">Admin Dashboard</h1>
+      <p className="dashboard-subtitle">Manage Products and Users:</p>
       <ManageProducts />
       <UserList />
     </div>

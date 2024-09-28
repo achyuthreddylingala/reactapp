@@ -1,0 +1,22 @@
+/* AdminDashboard.css */
+.dashboard-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+  }
+  
+  .dashboard-header {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .dashboard-subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  

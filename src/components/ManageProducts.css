@@ -1,0 +1,73 @@
+/* ManageProducts.css */
+.manage-products-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .input-container {
+    display: flex;
+    gap: 10px; /* Space between inputs and button */
+    margin-bottom: 20px; /* Space below the input container */
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px; /* Fixed width for inputs */
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  .product-list {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove padding */
+  }
+  
+  .product-item {
+    display: flex;
+    justify-content: space-between; /* Space between product details and button */
+    align-items: center; /* Center vertically */
+    padding: 10px 0;
+    border-bottom: 1px solid #eaeaea; /* Divider line */
+  }
+  
+  .product-item:last-child {
+    border-bottom: none; /* Remove border for last item */
+  }
+  
+  .delete-button {
+    padding: 5px 10px;
+    background-color: #dc3545; /* Bootstrap danger color */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333; /* Darker shade on hover */
+  }
+  

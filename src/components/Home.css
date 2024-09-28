@@ -1,0 +1,71 @@
+/* Style for the home container */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style for the main heading */
+.home-container h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Style for the descriptive paragraph */
+.home-container p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Style for the buttons container */
+.home-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style for individual buttons */
+.home-buttons button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+  width: 250px;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.home-buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* Button active state */
+.home-buttons button:active {
+  background-color: #004085;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .home-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .home-buttons button {
+    width: 200px;
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+}
